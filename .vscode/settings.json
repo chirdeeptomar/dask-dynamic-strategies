@@ -1,0 +1,10 @@
+{
+  "python.formatting.provider": "black",
+  "python.analysis.typeCheckingMode": "strict",
+  "python.autoComplete.extraPaths": [
+    "./**",
+  ],
+  "python.analysis.extraPaths": [
+    "./**"
+  ]
+}
