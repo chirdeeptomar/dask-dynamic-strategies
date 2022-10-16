@@ -14,3 +14,10 @@ stateDiagram-v2
    alerted_dataset --> save_output
    save_output --> [*]
 ```
+
+Before Running your program, start the following Dask applications: 
+
+```bash
+1. Run command 'dask-scheduler' to start Dask Schedular, you can visit the dashboard here: http://localhost:8787/status
+2. Run command 'dask-worker localhost:8786' to start Dask worker
+```

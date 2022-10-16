@@ -2,6 +2,6 @@
 from dask.dataframe import DataFrame
 
 
-def no_op_strategy(row: DataFrame) -> DataFrame:
+def no_op_strategy(df: DataFrame) -> DataFrame:
     """Evaluates True is row is not None"""
-    return row
+    return df
