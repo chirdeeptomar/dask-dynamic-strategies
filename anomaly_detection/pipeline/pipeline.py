@@ -18,6 +18,6 @@ def start_pipeline(path: Path, strategy: Callable[[DataFrame], DataFrame]) -> No
     data: DataFrame = loader.load(path)
     alerted_df = evaluator.evaluate(data, strategy)
     if alerted_df.size.compute() > 0:
-        pprint(f"Enriching alerted dataset")
+        pprint("Enriching alerted dataset")
         enriched_data: DataFrame = enricher.enrich(alerted_df, no_op_strategy)
         storage.save(enriched_data)
